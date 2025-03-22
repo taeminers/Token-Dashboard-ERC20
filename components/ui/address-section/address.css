@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.wallet-address-text {
+  font-size: 15px;
+  font-weight: 600;
+}

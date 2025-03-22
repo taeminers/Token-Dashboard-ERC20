@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.custom-button {
+  @apply w-full font-medium transition-colors cursor-pointer rounded-full duration-200 text-white bg-[#FF5733] hover:bg-[#FF5733]/90 disabled:bg-gray-300 disabled:cursor-not-allowed whitespace-nowrap;
+}
+
+.fixed-bottom-container {
+  @apply absolute w-[calc(100%-32px)] bottom-0 py-2.5 m-0;
+}
+
+.button-lg {
+  font-size: 17px;
+  font-weight: normal;
+  @apply px-6 py-3;
+}
+
+.button-md {
+  font-size: 14px;
+  font-weight: bold;
+  @apply px-4 py-2.5 w-fit;
+}

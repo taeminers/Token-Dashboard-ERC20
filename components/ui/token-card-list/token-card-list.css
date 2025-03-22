@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.card-list-wrapper {
+  @apply flex flex-col gap-4 pt-2 pb-4;
+}
+
+@media (min-width: 390px) {
+  .card-list-wrapper {
+    @apply grid grid-cols-2;
+  }
+}

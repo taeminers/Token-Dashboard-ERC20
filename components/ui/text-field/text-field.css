@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.text-field {
+  @apply bg-[rgba(126,52,37,0.09)] w-full text-black rounded-full  py-[13.5px] px-[13px] placeholder-[rgba(46,24,20,0.62)] focus:outline-none;
+}

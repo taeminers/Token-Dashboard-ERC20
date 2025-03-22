@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+.search-container {
+  @apply py-4 relative;
+}
+
+.search-bar {
+  @apply bg-[rgba(126,52,37,0.09)] w-full text-black rounded-full  py-2.5 pl-[39px] focus:outline-none;
+}
+
+.search-icon {
+  @apply absolute left-[13px] top-1/2 transform -translate-y-1/2;
+}
+
+.clear-icon {
+  @apply absolute right-[13px] top-1/2 transform -translate-y-1/2 cursor-pointer;
+}
+
+.placeholder-text::placeholder {
+  color: #281d1b;
+  font-size: 17px;
+  font-weight: 300;
+}
