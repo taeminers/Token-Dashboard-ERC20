@@ -1,8 +1,8 @@
 import { TokenCard } from "./token-card";
 import "./token-card-list.css";
-import { TokenCardProps } from "./token-card/types";
+import { TokenInfo } from "./token-card/types";
 type TokenCardList = {
-  balanceItems: TokenCardProps[];
+  balanceItems: TokenInfo[];
 };
 
 export const TokenCardList = ({ balanceItems }: TokenCardList) => {

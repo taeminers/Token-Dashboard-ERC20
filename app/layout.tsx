@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
+import { WalletProvider } from "@/context/WalletContext";
 // const notoSansKr = Noto_Sans_KR({
 //   variable: "--font-noto-sans-kr",
 //   subsets: ["latin"],
@@ -28,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${notoSansKr.className} centered-body`}>
-        {children}
+        <WalletProvider>{children}</WalletProvider>
       </body>
     </html>
   );

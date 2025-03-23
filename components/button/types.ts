@@ -1,4 +1,4 @@
-interface ButtonProps {
+export interface ButtonProps {
   onClick?: () => void;
   disabled?: boolean;
   size?: "l" | "m";

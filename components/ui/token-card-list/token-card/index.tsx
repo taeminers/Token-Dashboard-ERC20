@@ -1,9 +1,10 @@
 "use client";
-import { TokenCardProps } from "./types";
+import { TokenInfo } from "./types";
 import "./token-card.css";
 import { Button } from "@/components/button";
 import { useRouter } from "next/navigation";
-export const TokenCard = ({ title, balance }: TokenCardProps) => {
+import { formatTokenBalance } from "@/helpers/formatTokenBalance";
+export const TokenCard = ({ name, balance, symbol }: TokenInfo) => {
   const router = useRouter();
   const sendFormHandler = () => {
     router.push("/send-form");
@@ -11,8 +12,10 @@ export const TokenCard = ({ title, balance }: TokenCardProps) => {
   return (
     <div className="card-container">
       <div className="card-metadata">
-        <h1 className="card-title">{title}</h1>
-        <h4 className="card-balance">{balance}</h4>
+        <h1 className="card-title">{name}</h1>
+        <h4 className="card-balance">
+          {formatTokenBalance(balance) + " " + symbol}
+        </h4>
       </div>
       <div className="card-bottom-container">
         <Button size={"m"} onClick={sendFormHandler}>

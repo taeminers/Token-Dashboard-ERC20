@@ -1,4 +1,5 @@
-export interface TokenCardProps {
-  title: string;
+export type TokenInfo = {
+  name: string;
+  symbol: string;
   balance: string;
-}
+};
