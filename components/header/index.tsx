@@ -2,10 +2,12 @@
 import Image from "next/image";
 import React from "react";
 import "./header.css";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { HeaderProps } from "./types";
 const Header = ({ text: headerText, exit_icon }: HeaderProps) => {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const token = searchParams.get("token");
   const exitPageHandler = () => {
     router.back();
   };
@@ -25,7 +27,9 @@ const Header = ({ text: headerText, exit_icon }: HeaderProps) => {
           onClick={exitPageHandler}
         />
       )}
-      <h1 className="header-text">{headerText}</h1>
+      <h1 className="header-text">
+        {token ? token + " " + headerText : headerText}
+      </h1>
       {exit_icon && <div className="header-empty-container-right" />}
     </header>
   );

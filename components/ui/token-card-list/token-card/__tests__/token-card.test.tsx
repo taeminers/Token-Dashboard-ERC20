@@ -43,7 +43,7 @@ describe("TokenCard", () => {
     const sendButton = screen.getByText("토큰 보내기");
     fireEvent.click(sendButton);
 
-    expect(mockPush).toHaveBeenCalledWith("/send-form");
+    expect(mockPush).toHaveBeenCalledWith("/send-form?token=Ethereum");
   });
 
   it("should render with correct CSS classes", () => {
@@ -83,6 +83,6 @@ describe("TokenCard", () => {
 
     fireEvent.click(button);
     expect(mockPush).toHaveBeenCalledTimes(1);
-    expect(mockPush).toHaveBeenCalledWith("/send-form");
+    expect(mockPush).toHaveBeenCalledWith("/send-form?token=Ethereum");
   });
 });

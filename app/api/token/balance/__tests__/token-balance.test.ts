@@ -1,6 +1,5 @@
 // __tests__/api/token-balance.test.ts
 import { GET } from "@/app/api/token/balance/route";
-import { CONTRACT_ADDRESS } from "@/constants/token";
 
 describe("GET /api/token/balance", () => {
   const mockAddress = "0x1234567890abcdef1234567890abcdef12345678";

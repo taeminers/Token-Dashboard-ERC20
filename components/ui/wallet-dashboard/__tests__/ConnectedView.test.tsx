@@ -5,14 +5,6 @@ import { ConnectedView } from "../ConnectedView";
 import { SearchProvider } from "@/context/SearchContext/SearchContext";
 import { TokenInfo } from "@/components/ui/token-card-list/token-card/types";
 
-// Mock next/image
-jest.mock("next/image", () => ({
-  __esModule: true,
-  default: (props: any) => {
-    return <img {...props} />;
-  },
-}));
-
 // Mock next/navigation
 jest.mock("next/navigation", () => ({
   useRouter() {
@@ -103,7 +95,7 @@ describe("ConnectedView", () => {
       renderWithProviders();
 
       await waitFor(() => {
-        expect(screen.getByText("Loading...")).toBeInTheDocument();
+        expect(screen.getByTestId("loading-spinner")).toBeInTheDocument();
         expect(screen.queryByTestId("token-list")).not.toBeInTheDocument();
       });
     });

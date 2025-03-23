@@ -7,7 +7,7 @@ import { formatTokenBalance } from "@/helpers/formatTokenBalance";
 export const TokenCard = ({ name, balance, symbol }: TokenInfo) => {
   const router = useRouter();
   const sendFormHandler = () => {
-    router.push("/send-form");
+    router.push(`/send-form?token=${name}`);
   };
   return (
     <div className="card-container">

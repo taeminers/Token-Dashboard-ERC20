@@ -15,4 +15,16 @@ module.exports = {
     "!**/node_modules/**",
     "!**/.next/**",
   ],
+  coveragePathIgnorePatterns: [
+    "/node_modules/",
+    "/coverage/",
+    "/.next/",
+    "/jest.config.js",
+    "/jest.setup.js",
+    "/next.config.ts",
+    "tailwind.config.js",
+    "/types.ts$",
+    "/page.tsx$",
+    "/layout.tsx$",
+  ],
 };

@@ -1,3 +1,3 @@
 export interface AddressProps {
-  address: string;
+  address: string | null;
 }

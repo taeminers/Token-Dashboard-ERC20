@@ -6,7 +6,7 @@ export const AddressSection = ({ address }: AddressProps) => {
   return (
     <section className="flex gap-2.5 items-center p-4">
       <Avatar />
-      <WalletAddress wallet_address={address} />
+      {address && <WalletAddress wallet_address={address} />}
     </section>
   );
 };

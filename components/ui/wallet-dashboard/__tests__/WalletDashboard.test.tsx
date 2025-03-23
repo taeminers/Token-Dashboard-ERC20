@@ -16,14 +16,6 @@ jest.mock("../DisconnectedView", () => ({
   ),
 }));
 
-// Mock next/image
-jest.mock("next/image", () => ({
-  __esModule: true,
-  default: (props: any) => {
-    return <img {...props} />;
-  },
-}));
-
 // Mock the WalletContext
 const mockConnect = jest.fn();
 const mockDisconnect = jest.fn();

@@ -4,14 +4,6 @@ import "@testing-library/jest-dom";
 import { SearchBar } from "..";
 import { SearchProvider } from "@/context/SearchContext/SearchContext";
 
-// Mock next/image
-jest.mock("next/image", () => ({
-  __esModule: true,
-  default: (props: any) => {
-    return <img {...props} />;
-  },
-}));
-
 const renderWithProvider = () => {
   return render(
     <SearchProvider>

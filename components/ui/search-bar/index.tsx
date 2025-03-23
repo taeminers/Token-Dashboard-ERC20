@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import "./search-bar.css";
 import Image from "next/image";
 import { useSearch } from "@/context/SearchContext/SearchContext";

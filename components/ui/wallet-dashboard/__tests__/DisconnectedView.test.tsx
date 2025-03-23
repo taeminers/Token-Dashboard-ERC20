@@ -4,12 +4,6 @@ import "@testing-library/jest-dom";
 import { DisconnectedView } from "../DisconnectedView";
 
 // Mock next/image
-jest.mock("next/image", () => ({
-  __esModule: true,
-  default: (props: any) => {
-    return <img {...props} />;
-  },
-}));
 
 const mockOnConnect = jest.fn();
 
