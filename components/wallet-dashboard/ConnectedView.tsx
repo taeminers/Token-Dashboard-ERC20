@@ -1,12 +1,12 @@
 "use client";
-import { Button } from "@/components/button";
-import { AddressSection } from "@/components/ui/address-section";
-import { SearchBar } from "@/components/ui/search-bar";
-import { TokenCardList } from "@/components/ui/token-card-list";
+import { Button } from "@/components/ui/Button";
+import { AddressSection } from "@/components/address-section";
+import { SearchBar } from "@/components/search-bar";
+import { TokenCardList } from "@/components/token-card-list";
 import { TokenInfo } from "../token-card-list/token-card/types";
 import { useSearch } from "@/context/SearchContext/SearchContext";
 import { useWallet } from "@/context/WalletContext/WalletContext";
-import { Spinner } from "@/components/Spinner";
+import { Spinner } from "@/components/ui/Spinner";
 
 export const ConnectedView = () => {
   const { walletAddress, ETHBalance, tokenInfo, loading, error, disconnect } =

@@ -2,6 +2,7 @@
 import React from "react";
 import "./button.css";
 import { ButtonProps } from "./types";
+
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {

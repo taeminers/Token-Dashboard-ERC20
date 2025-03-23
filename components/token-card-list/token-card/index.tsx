@@ -1,7 +1,7 @@
 "use client";
 import { TokenInfo } from "./types";
 import "./token-card.css";
-import { Button } from "@/components/button";
+import { Button } from "@/components/ui/Button";
 import { useRouter } from "next/navigation";
 import { formatTokenBalance } from "@/helpers/formatTokenBalance";
 export const TokenCard = ({ name, balance, symbol }: TokenInfo) => {

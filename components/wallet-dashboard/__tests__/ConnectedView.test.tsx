@@ -3,7 +3,7 @@ import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import { ConnectedView } from "../ConnectedView";
 import { SearchProvider } from "@/context/SearchContext/SearchContext";
-import { TokenInfo } from "@/components/ui/token-card-list/token-card/types";
+import { TokenInfo } from "@/components/token-card-list/token-card/types";
 
 // Mock next/navigation
 jest.mock("next/navigation", () => ({

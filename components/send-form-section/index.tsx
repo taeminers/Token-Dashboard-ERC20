@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "@/components/button";
+import { Button } from "@/components/ui/Button";
 import { TextField } from "../text-field";
 import { useWallet } from "@/context/WalletContext/WalletContext";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -8,7 +8,7 @@ import { FormData } from "./types";
 import { validationRules } from "./validation";
 import { sendToken } from "./sendToken";
 import { useState } from "react";
-import { Spinner } from "@/components/Spinner";
+import { Spinner } from "@/components/ui/Spinner";
 
 export const SendFormSection = () => {
   const { tokenInfo, ETHBalance, refetchTokenData } = useWallet();

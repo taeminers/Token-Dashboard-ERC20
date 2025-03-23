@@ -7,7 +7,7 @@ import {
   useEffect,
 } from "react";
 import { ethers } from "ethers";
-import { TokenInfo } from "@/components/ui/token-card-list/token-card/types";
+import { TokenInfo } from "@/components/token-card-list/token-card/types";
 
 interface WalletContextType {
   walletAddress: string | null;

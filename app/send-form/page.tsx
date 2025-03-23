@@ -1,11 +1,12 @@
-import Header from "@/components/header";
-import { SendFormSection } from "@/components/ui/send-form-section";
+import Header from "@/components/ui/Header";
+import { SendFormSection } from "@/components/send-form-section";
 import { Suspense } from "react";
+import { Spinner } from "@/components/ui/Spinner";
 
 export default function SendForm() {
   return (
     <main>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Spinner />}>
         <Header text="보내기" exit_icon={true} />
         <SendFormSection />
       </Suspense>
