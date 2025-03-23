@@ -1,19 +1,12 @@
 import type { Metadata } from "next";
 import { Noto_Sans_KR } from "next/font/google";
 import "./globals.css";
-import { WalletProvider } from "@/context/WalletContext";
-// const notoSansKr = Noto_Sans_KR({
-//   variable: "--font-noto-sans-kr",
-//   subsets: ["latin"],
-// });
+import { WalletProvider } from "@/context/WalletContext/WalletContext";
 
 const notoSansKr = Noto_Sans_KR({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  display: "fallback",
+  preload: true,
   subsets: ["latin"],
-  style: "normal",
-  variable: "--noto-sans_KR-medium",
-  fallback: ["system-ui"],
+  weight: ["400", "500", "700"],
 });
 
 export const metadata: Metadata = {

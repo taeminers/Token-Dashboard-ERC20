@@ -2,7 +2,10 @@
 import React from "react";
 import { render, screen, waitFor, act } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import { useWallet, WalletProvider } from "@/context/WalletContext";
+import {
+  useWallet,
+  WalletProvider,
+} from "@/context/WalletContext/WalletContext";
 
 // Mock component to consume the context
 const TestComponent = () => {

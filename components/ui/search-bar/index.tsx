@@ -2,9 +2,18 @@
 import { useState } from "react";
 import "./search-bar.css";
 import Image from "next/image";
+import { useSearch } from "@/context/SearchContext/SearchContext";
+
 export const SearchBar = () => {
-  const [search, setSearch] = useState("");
-  const handleClear = () => setSearch("");
+  const { searchTerm, setSearchTerm } = useSearch();
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchTerm(e.target.value);
+  };
+  const handleClear = () => {
+    setSearchTerm("");
+  };
+
   return (
     <section className="search-container">
       <Image
@@ -17,8 +26,8 @@ export const SearchBar = () => {
       <input
         className="search-bar placeholder-text"
         placeholder="토큰 검색"
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
+        value={searchTerm}
+        onChange={handleChange}
       />
       <Image
         src="/icon/Close.svg"
