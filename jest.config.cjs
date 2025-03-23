@@ -2,7 +2,11 @@ module.exports = {
   testEnvironment: "jsdom",
   setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
   moduleNameMapper: {
-    "^@/(.*)$": "<rootDir>/$1",
+    "^@/app/(.*)$": "<rootDir>/app/$1",
+    "^@/components/(.*)$": "<rootDir>/components/$1",
+    "^@/context/(.*)$": "<rootDir>/context/$1",
+    "^@/constants/(.*)$": "<rootDir>/constants/$1",
+    "^@/helpers/(.*)$": "<rootDir>/helpers/$1",
     "\\.(css|less|scss|sass)$": "identity-obj-proxy",
   },
   testPathIgnorePatterns: ["<rootDir>/.next/", "<rootDir>/node_modules/"],

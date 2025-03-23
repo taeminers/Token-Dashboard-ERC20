@@ -1,4 +1,3 @@
-// __tests__/api/token-balance.test.ts
 import { GET } from "@/app/api/token/balance/route";
 
 describe("GET /api/token/balance", () => {

@@ -20,7 +20,7 @@ jest.mock("next/navigation", () => ({
 }));
 
 // Mock TokenCardList component
-jest.mock("@/components/ui/token-card-list", () => ({
+jest.mock("@/components/token-card-list", () => ({
   TokenCardList: ({ balanceItems }: { balanceItems: TokenInfo[] }) => (
     <div data-testid="token-list">
       {balanceItems?.map((item: TokenInfo, index: number) => (
