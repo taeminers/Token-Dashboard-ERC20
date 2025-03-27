@@ -15,14 +15,12 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     ref
   ) => {
     return (
-      <div className={`${fixedBottom ? "fixed-bottom-container" : ""}`}>
+      <div className={`${fixedBottom ? "button__fixed-container" : ""}`}>
         <button
           ref={ref}
           onClick={onClick}
           disabled={disabled}
-          className={`custom-button ${
-            size === "l" ? "button-lg" : "button-md"
-          }`}
+          className={`button ${size === "l" ? "button__lg" : "button__md"}`}
         >
           {children}
         </button>

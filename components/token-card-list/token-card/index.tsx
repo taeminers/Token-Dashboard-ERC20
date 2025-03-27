@@ -10,14 +10,14 @@ export const TokenCard = ({ name, balance, symbol }: TokenInfo) => {
     router.push(`/send-form?token=${name}`);
   };
   return (
-    <div className="card-container">
-      <div className="card-metadata">
-        <h1 className="card-title">{name}</h1>
-        <h4 className="card-balance">
+    <div className="card__container">
+      <div className="card__metadata">
+        <h1 className="card__title">{name}</h1>
+        <h4 className="card__balance">
           {formatTokenBalance(balance) + " " + symbol}
         </h4>
       </div>
-      <div className="card-bottom-container">
+      <div className="card__bottom-container">
         <Button size={"m"} onClick={sendFormHandler}>
           토큰 보내기
         </Button>

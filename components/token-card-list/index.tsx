@@ -7,7 +7,7 @@ type TokenCardList = {
 
 export const TokenCardList = ({ balanceItems }: TokenCardList) => {
   return (
-    <section className="card-list-wrapper">
+    <section className="card-list__wrapper">
       {balanceItems.map((item) => (
         <TokenCard {...item} key={item.balance} />
       ))}

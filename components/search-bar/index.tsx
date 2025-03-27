@@ -12,18 +12,17 @@ export const SearchBar = () => {
   const handleClear = () => {
     setSearchTerm("");
   };
-
   return (
-    <section className="search-container">
+    <section className="search__container">
       <Image
         src="/icon/Search.svg"
         width={18}
         height={18}
-        className="search-icon"
+        className="search__search-icon"
         alt="Search Icon"
       />
       <input
-        className="search-bar placeholder-text"
+        className="search__bar placeholder-text"
         placeholder="토큰 검색"
         value={searchTerm}
         onChange={handleChange}
@@ -32,7 +31,7 @@ export const SearchBar = () => {
         src="/icon/Close.svg"
         width={18}
         height={18}
-        className="clear-icon"
+        className="search__clear-icon"
         alt="Close Icon"
         onClick={handleClear}
       />

@@ -1,22 +1,22 @@
 @import "tailwindcss";
 
-.header-container-no-icons {
+.header__container-no-icons {
   @apply flex justify-center items-center py-2 text-lg h-[48px];
 }
 
-.header-container-icons {
+.header__container-icons {
   @apply flex justify-between items-center py-2 text-lg h-[48px];
 }
 
-.header-empty-container-right {
+.header__empty-container-right {
   @apply w-[25px] h-[25px];
 }
 
-.exit-icon {
+.header__exit-icon {
   @apply cursor-pointer;
 }
 
-.header-text {
+.header__text {
   font-size: 17px;
   font-weight: 600;
 }

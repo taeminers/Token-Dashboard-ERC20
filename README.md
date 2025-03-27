@@ -1,6 +1,6 @@
 # Token Dashboard
 
-**두나무 프론트엔드 과제 - 이태민 (Taemin Lee)**  
+**xxx를 위한 과제 - 이태민 (Taemin Lee)**  
 MetaMask를 사용하여 ETH 및 ERC20 토큰을 관리하고 전송할 수 있는 최신 웹 애플리케이션입니다.  
 Next.js, TypeScript, Ethers.js로 구축되었습니다.
 
@@ -79,7 +79,8 @@ Next.js, TypeScript, Ethers.js로 구축되었습니다.
 3. `.env.local` 파일을 루트 디렉토리에 생성하고 환경 변수를 추가하세요:
 
    ```env
-   NEXT_PUBLIC_CONTRACT_ADDRESS=your_contract_address
+   ALCHEMY_API_KEY=your_key
+   ALCHEMY_API_URL="https://eth-sepolia.g.alchemy.com/v2/Q5qoSC-5AkBVbyD5-oh2lyJ2CaX70Gk0"
    ```
 
 4. 개발 서버 실행:
@@ -104,7 +105,7 @@ token-dashboard/
 │   ├── search-bar/          # 토큰 검색 기능
 │   ├── send-form-section/   # 토큰 전송 폼
 │   ├── text-field/          # 입력 필드 컴포넌트
-│   ├── token-card-list/     # 토큰 잔액 카트
+│   ├── token-card-list/     # 토큰 잔액 카드
 │   └── wallet-dashboard/    # 대시보드 메인 뷰
 │   └── ui/                  # reusable 컴포넌트
 │       ├── Button/              # 재사용 가능한 버튼 컴포넌트
@@ -122,6 +123,7 @@ token-dashboard/
 ---
 
 ## 테스트
+
 시간 부족으로 인해 E2E 테스트는 건너뛰었습니다.
 컴포넌트 및 유틸리티에 대한 테스트가 포함되어 있습니다:
 
