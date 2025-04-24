@@ -1,6 +1,5 @@
 # Token Dashboard
 
-**xxx를 위한 과제 - 이태민 (Taemin Lee)**  
 MetaMask를 사용하여 ETH 및 ERC20 토큰을 관리하고 전송할 수 있는 최신 웹 애플리케이션입니다.  
 Next.js, TypeScript, Ethers.js로 구축되었습니다.
 
@@ -124,7 +123,6 @@ token-dashboard/
 
 ## 테스트
 
-시간 부족으로 인해 E2E 테스트는 건너뛰었습니다.
 컴포넌트 및 유틸리티에 대한 테스트가 포함되어 있습니다:
 
 ```bash
